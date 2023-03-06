@@ -3,6 +3,7 @@ import createDebug from 'debug';
 import express, { NextFunction, Response, Request } from 'express';
 import morgan from 'morgan';
 import { CustomError } from './errors/errors';
+import { userRouter } from './router/user.router.js';
 
 const debug = createDebug('W6:app');
 
@@ -16,6 +17,8 @@ const corsOptions = {
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors(corsOptions));
+
+app.use('/users', userRouter);
 
 app.use(
   (error: CustomError, _req: Request, resp: Response, _next: NextFunction) => {
