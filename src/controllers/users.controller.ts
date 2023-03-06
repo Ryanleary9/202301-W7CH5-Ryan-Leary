@@ -1,10 +1,10 @@
 import { NextFunction, Response, Request } from 'express';
-import { User } from '../entities/user';
-import { Repo } from '../repository/repo.interface';
+import { User } from '../entities/user.js';
+import { Repo } from '../repository/repo.interface.js';
 import createDebug from 'debug';
-import { HTTPError } from '../errors/errors';
-import { Auth, PayloadToken } from '../services/auth';
-import { RequestPlus } from '../interceptors/logged';
+import { HTTPError } from '../errors/errors.js';
+import { Auth, PayloadToken } from '../services/auth.js';
+import { RequestPlus } from '../interceptors/logged.js';
 
 const debug = createDebug('W6:controller');
 
