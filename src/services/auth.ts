@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
-import { config } from '../config';
-import { HTTPError } from '../errors/errors';
+import { config } from '../config.js';
+import { HTTPError } from '../errors/errors.js';
 import bcrypt from 'bcryptjs';
 
 export interface PayloadToken extends jwt.JwtPayload {

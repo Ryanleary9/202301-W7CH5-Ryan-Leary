@@ -1,7 +1,7 @@
 import createDebug from 'debug';
 import http from 'http';
-import { app } from './app';
-import { dbConnect } from './db/db.connect';
+import { app } from './app.js';
+import { dbConnect } from './db/db.connect.js';
 const debug = createDebug('W6');
 
 const PORT = process.env.PORT || 4500;
