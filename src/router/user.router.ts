@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { UserMongoRepo } from '../repository/users.mongo.repo';
-import { UserController } from '../controllers/users.controller';
-import { loged } from '../interceptors/logged';
+import { UserMongoRepo } from '../repository/users.mongo.repo.js';
+import { UserController } from '../controllers/users.controller.js';
+import { loged } from '../interceptors/logged.js';
 
 // eslint-disable-next-line new-cap
 export const userRouter = Router();

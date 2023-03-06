@@ -1,8 +1,8 @@
-import { User } from '../entities/user';
-import { Repo } from './repo.interface';
+import { User } from '../entities/user.js';
+import { Repo } from './repo.interface.js';
 import createDebug from 'debug';
-import { UserModel } from './user.mongo.model';
-import { HTTPError } from '../errors/errors';
+import { UserModel } from './user.mongo.model.js';
+import { HTTPError } from '../errors/errors.js';
 
 const debug = createDebug('W6: ');
 

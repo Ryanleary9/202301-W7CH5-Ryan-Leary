@@ -1,9 +1,9 @@
 import { NextFunction } from 'express';
-import { RequestPlus } from './logged';
+import { RequestPlus } from './logged.js';
 
 import { HTTPError } from '../errors/errors.js';
 import createDebug from 'debug';
-import { UserMongoRepo } from '../repository/users.mongo.repo';
+import { UserMongoRepo } from '../repository/users.mongo.repo.js';
 
 const debug = createDebug('W6: interceptors:authorized');
 
